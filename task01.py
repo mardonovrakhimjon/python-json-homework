@@ -24,4 +24,6 @@ def get_student_stats(data: str) -> dict:
         "average_age": average_age
     }
 
-print(get_student_stats(json_data))
+f = open('output_file01.json', 'w')
+json.dumps(get_student_stats(json_data), indent=4)
+f.write(json_data)

@@ -28,4 +28,6 @@ def calculate_total_spent(data: dict) -> list:
             "total_spent": total
         })
     return new_data
-print(calculate_total_spent(d_data))
+
+f = open('output_file02.json', 'w')
+f.write(json.dumps(d_data, indent=2))

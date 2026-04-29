@@ -1,3 +1,6 @@
+import json
+
+
 def is_valid_user(user: dict) -> bool:
     name_valid = len(user.get("name", "").strip()) > 0
     email_valid = "@" in user.get("email", "")
@@ -25,5 +28,6 @@ users_data = [
     {"name": "Vali", "email": "vali@example.com", "age": 25}
 ]
 
-# Natija
-print(split_users(users_data))
+f = open('output_file03.json', 'w')
+# (split_users(users_data))
+f.write(json.dumps(users_data, indent=4))

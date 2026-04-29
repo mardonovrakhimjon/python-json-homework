@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ali",
+      "orders": [
+        {
+          "id": 101,
+          "price": 100
+        },
+        {
+          "id": 102,
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Vali",
+      "orders": []
+    }
+  ]
+}
